@@ -46,14 +46,14 @@ class Line():
 			_ = self.B.pop(0)
 			_ = self.C.pop(0)
 
-		# Simple average of line coefficients
-		# self.A_avg = np.mean(self.A)
-		# self.B_avg = np.mean(self.B)
-		# self.C_avg = np.mean(self.C)
+		Simple average of line coefficients
+		self.A_avg = np.mean(self.A)
+		self.B_avg = np.mean(self.B)
+		self.C_avg = np.mean(self.C)
 
-		self.A_avg = self.A[-1]
-		self.B_avg = self.B[-1]
-		self.C_avg = self.C[-1]
+		# self.A_avg = self.A[-1]
+		# self.B_avg = self.B[-1]
+		# self.C_avg = self.C[-1]
 
 		return (self.A_avg, self.B_avg, self.C_avg)
 
